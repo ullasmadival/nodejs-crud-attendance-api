@@ -10,8 +10,8 @@ A simple REST API built using Node.js and Express.js to manage user attendance w
 - Retrieve all users (GET)
 - Update user information (PUT)
 - Delete user (DELETE)
-- Uses RESTful API structure
-- JSON-based request and response handling
+- RESTful API design
+- JSON-based request & response handling
 
 ---
 
@@ -24,19 +24,19 @@ A simple REST API built using Node.js and Express.js to manage user attendance w
 
 ## 📂 API Endpoints
 
-### ➤ Create Attendance
-POST `/attendance`
+### 🔹 Create Attendance
+**POST** `/attendance`
 
 ```json
 {
   "username": "John",
   "email": "john@example.com"
 }
-➤ Get All Users
+🔹 Get All Users
 
 GET /attendance
 
-➤ Update Username
+🔹 Update User
 
 PUT /attendance
 
@@ -44,33 +44,29 @@ PUT /attendance
   "userId": 1,
   "username": "New Name"
 }
-➤ Delete User
+🔹 Delete User
 
 DELETE /attendance
 
 {
   "userId": 1
 }
-⚠️ Note
-Data is stored in-memory (array), not in a database
-This project is built for learning backend fundamentals
+⚠️ Notes
+Data is stored in-memory (no database)
+This project is for learning backend fundamentals
 🚀 How to Run
 npm install
 npm start
 
-Server will run on:
+Server runs on:
 
 http://localhost:8282
 📈 Future Improvements
-Integrate MongoDB database
+Integrate MongoDB
 Add authentication (JWT)
-Implement validation middleware
-Improve error handling
+Improve validation & error handling
 💡 Learning Outcome
-
-This project helped in understanding:
-
 REST API design
 HTTP methods
 Request & response handling
-Backend logic structuring using Express.js
+Backend logic using Express.js
